@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="style.css">
+    <title>EduApp</title>
+
+    <!-- Required JS Files-->
+    <script src="script.js"></script>
+</head>
+
+<body class="History", style="background-color:lightblue;">
+    <h1 class="Head-Title">4th Grade WW1</h1>
+    <img src="https://images-na.ssl-images-amazon.com/images/I/91pc8UND9-L._RI_.jpg" alt="alternatetext"style="width:1400px;height:800px;">
+    <form name="WordMultChoice" class="WordMultChoice" id="WordMultChoice">
+        <div class="Question">
+            <p>1. Which country made the first declaration of war?</p>
+            <p><input type="radio" name="question1" value="Germany">Germany</p>
+            <p><input type="radio" name="question1" value="Serbia">Serbia</p>
+            <p><input type="radio" name="question1" value="Austria-Hungary">Austria-Hungary</p>
+            <p><input type="radio" name="question1" value="Russia">Russia</p>
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question1')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+        <div class="Question">
+            <p>2. In what city was Archduke Franz Ferdinand assassinated?</p>
+            <p><input type="radio" name="question2" value="Q1">Zagreb</p>
+            <p><input type="radio" name="question2" value="Q2">Vienna</p>
+            <p><input type="radio" name="question2" value="Q3">Sarajevo</p>
+            <p><input type="radio" name="question2" value="Q4">Belgrade</p>
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question2')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+        <div class="Question">
+            <p>3. To which other prominent leader was Kaiser Wilhelm II of Germany related?</p>
+            <p><input type="radio" name="question3" value="Q1">Woodrow Wilson of the United States</p>
+            <p><input type="radio" name="question3" value="Q2">Franz Joseph of Austria-Hungary</p>
+            <p><input type="radio" name="question3" value="Q3">Nicholas II of Russia</p>
+            <p><input type="radio" name="question3" value="Q4">Winston Churchill of Britain.</p>
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question3')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+        <div class="Question">
+            <p>4. Germany’s attack upon which country directly provoked Britain to go to war?</p>
+            <p><input type="radio" name="question4" value="Q1">France</p>
+            <p><input type="radio" name="question4" value="Q2">Russia</p>
+            <p><input type="radio" name="question4" value="Q3">Belgium</p>
+            <p><input type="radio" name="question4" value="Q4">Holland</p>
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question4')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+        <div class="Question">
+            <p>5. A war of attrition is defined as</p>
+            <p><input type="radio" name="question5" value="Q1">A war in which both sides periodically exchange prisoners and then continue fighting</p>
+            <p><input type="radio" name="question5" value="Q2">A war that is ended by a single crushing strike</p>
+            <p><input type="radio" name="question5" value="Q3">A war that is won by cutting off the enemy’s supply line</p>
+            <p><input type="radio" name="question5" value="Q4">A war in which victory is determined not by which side seizes the most territory but by which side loses the most men</p>
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question5')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+    </form>
+    
+    <form name="FillInTheBlank" class="FillInTheBlank" value="FillInTheBlank">
+
+        <div class="Question">
+            <p>6. Which country joined the war on the side of the Allied Powers in 1916?</p>
+            <input id = "textbox" type = "text" name = "question6">
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question6')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+
+        <div class="Question">
+            <p>7. The Zimmermann telegram urged which country to attack the United States?</p>
+            <input id = "textbox" type = "text" name = "question7">
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question7')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+
+        <div class="Question">
+            <p>8. On what date did the United States declare war on Germany?</p>
+            <input id = "textbox" type = "text" name = "question8">
+            <input type="button" class="Submission" name="" value="Submit" onclick="checkQuestion('question8')">
+            <input type="hidden" id="answer">
+            <input type='reset'>
+        </div>
+        
+    </form>
+
+    <form name = "Reset" class="Reset">
+        <div class="Question_Reset">
+          <button id='fullReset'>Full Reset</button>
+        </div>
+    </form>
+   
+
+    <script>
+    var fullReset = document.getElementById('fullReset');
+
+    fullReset.addEventListener('click', function(e) {
+      location.reload();
+    }, false);
+  </script>
+</body>
+</html>
